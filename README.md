@@ -9,7 +9,7 @@ The process to generate the output results are -
 
 ## Steps to run the solution
 
-- Open the CodeSkill.sln file in visual studio.
+- Open the CodingSkills.sln file in visual studio.
 - Build the solution
 - Run by clicking on "IIS Express" button
 - Click on "Generate Result CSV" button
