@@ -63,5 +63,15 @@ namespace CodingSkills.Tests
             var result = service.GetMergedProductsByDescription(BarcodesCompanyA, BarcodesCompanyB, ProductsCompanyA, ProductsCompanyB);
             Assert.AreEqual(null, result);
         }
+
+        [TestMethod]
+        public void Barcode_FromCsv_Test()
+        {
+            string csvLine = "00001,647-vyk-317,z2783613083817";
+            string source = "A";
+            ProductBarcode barcode = new ProductBarcode().FromCsv(csvLine, source);
+            Assert.IsNotNull(barcode);
+            Assert.AreEqual("647-vyk-317", barcode.SKU);
+        }
     }
 }
